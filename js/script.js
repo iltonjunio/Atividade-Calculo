@@ -81,6 +81,6 @@ function bhaskara() {
     let delta = (b ** 2) - 4 * a * c
     let x1 = (-1 * b + (Math.sqrt(delta))) / (2 * a)
     let x2 = (-1 * b - (Math.sqrt(delta))) / (2 * a)
-    document.getElementById("resultado8").innerHTML = "A raiz das duas equação:" + x1.toFixed(2)
-    document.getElementById("resultado8").innerHTML = "A raiz das duas equação:" + x2.toFixed(2)
+    document.getElementById("resultado8").innerHTML = "A raiz das duas equação:" + x1.toFixed(2)  + " " + x2.toFixed(2)
+
 }

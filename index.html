@@ -6,13 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Calculo</title>
 </head>
 
 <body>
-    <main class="container bg-secondary text-center just">
-        <div class="row">
-            <div class="col bg-danger-subtle text-center">
+    <main class="container bg-primary text-center ">
+        <div>
+            <h1 class="bg-primary-subtle">Calculos</h1>
+        </div>
+        <div class="row p-3 m-2">
+            <h3>Calculo de soma, Subtracão, multiplicacão. </h3>
+            <div class="col bg-primary-subtle text-center">
                 <button onclick="soma(3, 4)">
                     Soma
                 </button>
@@ -23,8 +30,9 @@
                 </button>
             </div>
         </div>
-        <div class="row">
-            <div class="col col bg-danger-subtle">
+        <h3>Calculo de Divisão, Calculo, Mostra Nome?. </h3>
+        <div class="row p-3 m-2">
+            <div class="col bg-primary-subtle text-center">
                 <button onclick="divisao(9, 4)">
                     Divisão
                 </button>
@@ -32,19 +40,21 @@
                     Mostra Nome?
                 </button>
                 <button onclick="calculo(20, 8)">
-                    Calculo
+                    Calculo?
                 </button>
             </div>
         </div>
-        <div class="row">
-            <div class="col col bg-danger-subtle">
+        <div class="row p-3 m-2">
+            <h3>Calculo da Área do circulo: </h3>
+            <div class="col bg-primary-subtle text-center">
                 <input id="raio" placeholder="Informe o raio">
                 <button onclick="calculocirculo()">
                     Valor da Área do Círculo:
                 </button>
                 <div id="resultado1"></div>
             </div>
-            <div class="col col bg-danger-subtle">
+            <h3>Calculo da Área do triangulo: </h3>
+            <div class="col bg-primary-subtle text-center">
                 <input id="raio" placeholder="Informe o raio">
                 <button onclick="areatriagulo()">
                     Valor da Área do triangulo:
@@ -52,8 +62,9 @@
                 <div id="resultado2"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col col bg-danger-subtle">
+        <h3>Calculo da Hipotenusa:</h3>
+        <div class="row p-3 m-2">
+            <div class="col bg-primary-subtle text-center">
                 <input id="co" placeholder="Informe o co">
                 <input id="ca" placeholder="Informe o ca">
                 <button onclick="calculodotriagulo()">
@@ -61,7 +72,8 @@
                 </button>
                 <div id="resultado3"></div>
             </div>
-            <div class="col col bg-danger-subtle">
+            <h3>Converter real para Dólar:</h3>
+            <div class="col bg-primary-subtle text-center">
                 <input id="real" placeholder="Informe um valor em reais">
                 <input id="dolar" placeholder="Informe a cotação atual do dolar">
                 <button onclick="realdolar()">
@@ -70,8 +82,9 @@
                 <div id="resultado4"></div>
             </div>
         </div>
-        <div class="row col bg-danger-subtle">
-            <div class="col">
+        <h3>Calcular da Média:</h3>
+        <div class="row p-3 m-2 ">
+            <div class="col bg-primary-subtle text-center">
                 <input id="nota1" placeholder="Informe a media">
                 <input id="nota2" placeholder="Informe a media">
                 <input id="nota3" placeholder="Informe a media">
@@ -80,7 +93,8 @@
                 </button>
                 <div id="resultado5"></div>
             </div>
-            <div class="col col bg-danger-subtle">
+            <h3>Valor de celsius para fahrenheit:</h3>
+            <div class="col bg-primary-subtle text-center">
                 <input id="celsius" placeholder="Informe a quantidade em celsius:">
                 <button onclick="conversaoTemperatura()">
                     Valor de celsius para fahrenheit:
@@ -88,15 +102,17 @@
                 <div id="resultado6"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col col bg-danger-subtle">
+        <h3>Valor em metro por segundo:</h3>
+        <div class="row p-3 m-2">
+            <div class="col bg-primary-subtle text-center">
                 <input id="velocidade" placeholder="Informe a quantidade de km/h:">
                 <button onclick="conversaoVelocidade()">
                     valor em metro por segundo:
                 </button>
                 <div id="resultado7"></div>
             </div>
-            <div class="col col bg-danger-subtle">
+            <h3>A raiz do dois valores x1, x2 são:</h3>
+            <div class="col bg-primary-subtle text-center">
                 <input id="a" placeholder="Informe o valor de a:">
                 <input id="b" placeholder="Informe o valor de b:">
                 <input id="c" placeholder="Informe o valor de c:">
