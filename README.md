@@ -1,4 +1,4 @@
-# helloworld
+
 novo projeto
 EXERCÍCIO A
 Crie um novo repositório no GitHub e inicialize um projeto frontend com a estrutura de pastas e arquivos que você já conhece. Na pasta "js" você deverá criar um arquivo chamado "script.js" e importá-lo no arquivo principal index.html.
