@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,31 @@
     <script src="js/script.js"></script>
     <title>hello world js</title>
 </head>
+
 <body>
     <main>
-        <button onclick="soma(3, 4)">
-            Soma
-        </button>
-        <button onclick="subtracao(5, 6)">
-            Subtracão
-        </button>
-        <button onclick="multiplicacao(2, 4)">
-            Multiplicacão
-        </button>
-        <button onclick="divisao(9, 4)">
-            Divisão
-        </button>
-        <button onclick="mostrarnome()">
-            Mostra Nome?
-        </button>
-        <button onclick="calculo(20, 8)"> 
-            Calculo
-        </button>
+        <div class="row">
+            <div class="col">
+                <button onclick="soma(3, 4)">
+                    Soma
+                </button>
+                <button onclick="subtracao(5, 6)">
+                    Subtracão
+                </button>
+                <button onclick="multiplicacao(2, 4)">
+                    Multiplicacão
+                </button>
+                <button onclick="divisao(9, 4)">
+                    Divisão
+                </button>
+                <button onclick="mostrarnome()">
+                    Mostra Nome?
+                </button>
+                <button onclick="calculo(20, 8)">
+                    Calculo
+                </button>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
                 <input id="raio" placeholder="Informe o raio">
@@ -62,7 +68,7 @@
             </div>
         </div>
         <div class="row">
-            
+
             <div class="col">
                 <input id="nota1" placeholder="Informe a media">
                 <input id="nota2" placeholder="Informe a media">
@@ -98,9 +104,10 @@
                 <div id="resultado"></div>
             </div>
         </div>
-        
-    <footer>
 
-    </footer>
+        <footer>
+
+        </footer>
 </body>
+
 </html>
