@@ -27,24 +27,77 @@
         <button onclick="calculo(20, 8)"> 
             Calculo
         </button>
-        <button onclick="circulo()">
-            Valor da Área do Círculo
-        </button>
-        <button onclick="triagulo()">
-            Calcular Hipotenusa
-        </button>
-        <button onclick="realdolar()">
-            Converter para Dólar
-        </button>
-        <button onclick="media()">
-            Calcular Média
-        </button>
-        <button onclick="raizes()">
-            Calcular Raízes
-        </button>
-        <button onclick="kmhora()">
-            Calcular Raízes
-        </button>
+        <div class="row">
+            <div class="col">
+                <input id="raio" placeholder="Informe o raio">
+                <button onclick="calculocirculo()">
+                    Valor da Área do Círculo:
+                </button>
+                <div id="resultado"></div>
+            </div>
+            <div class="col">
+                <input id="raio" placeholder="Informe o raio">
+                <button onclick="areatriagulo()">
+                    Valor da Área do triangulo:
+                </button>
+                <div id="resultado"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input id="co" placeholder="Informe o co">
+                <input id="ca" placeholder="Informe o ca">
+                <button onclick="calculodotriagulo()">
+                    Calcular da Hipotenusa:
+                </button>
+                <div id="resultado"></div>
+            </div>
+            <div class="col">
+                <input id="real" placeholder="Informe um valor em reais">
+                <input id="dolar" placeholder="Informe a cotação atual do dolar">
+                <button onclick="realdolar()">
+                    Converter real para Dólar:
+                </button>
+                <div id="resultado"></div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col">
+                <input id="nota1" placeholder="Informe a media">
+                <input id="nota2" placeholder="Informe a media">
+                <input id="nota3" placeholder="Informe a media">
+                <button onclick="media()">
+                    Calcular da Média:
+                </button>
+                <div id="resultado"></div>
+            </div>
+            <div class="col">
+                <input id="celsius" placeholder="Informe a quantidade em celsius:">
+                <button onclick="conversaoTemperatura()">
+                    Valor de celsius para fahrenheit:
+                </button>
+                <div id="resultado"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input id="velocidade" placeholder="Informe a quantidade de km/h:">
+                <button onclick="conversaoVelocidade()">
+                    valor em metro por segundo:
+                </button>
+                <div id="resultado"></div>
+            </div>
+            <div class="col">
+                <input id="a" placeholder="Informe o valor de a:">
+                <input id="b" placeholder="Informe o valor de b:">
+                <input id="c" placeholder="Informe o valor de c:">
+                <button onclick="bhaskara()">
+                    A raiz do dois valores x1, x2 são:
+                </button>
+                <div id="resultado"></div>
+            </div>
+        </div>
         
     <footer>
 
