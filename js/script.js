@@ -35,8 +35,9 @@ function calculocirculo() {
 }
 
 function areatriagulo() {
-    let raio = parseInt(document.getElementById("raio").value)
-    let area = Math.PI * Math.pow(raio, 2)
+    let raio1= parseFloat(document.getElementById("base").value)
+    let raio2 = parseFloat(document.getElementById("altura").value)
+    let area = (raio1 * raio2) / 2
     document.getElementById("resultado2").innerHTML = "A Área do triagulo é: " + area.toFixed(2)
 }
 

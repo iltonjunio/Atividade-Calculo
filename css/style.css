@@ -2,19 +2,26 @@
     padding: 5px;
     margin: 5px;
     text-align: center;
+
 }
 button {
     border: none;
     background-color: #707070;
     color: #eee;
-    font-size: 1.3rem;
-    border-radius: 2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
     padding: 6px;
-    filter: drop-shadow(3px 5px 0px);   
     cursor: pointer;
+    font-size 10px;
 }
 button:hover {
-    color: black;
-    background-color: #eee;
-    filter: drop-shadow(3px 7px 3px);
+    color: rgb(238, 230, 230);
+    background-color: #1a1919;
+    filter: drop-shadow(2px 5px 2px);
+}
+::placeholder{
+    border-radius: 2rem;
+}
+h3{
+    color: rgb(247, 241, 241);
 }
