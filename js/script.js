@@ -15,8 +15,17 @@ function multiplicacao(n1, n2) {
     alert(n1 + n2)
 }
 
-function divisao(n1, n2) {
-    alert(n1 + n2)
+function divisao() {
+    numerador = parseFloat(document.getElementById("numerador").value);
+    denominador = parseFloat(document.getElementById("denominador").value);
+
+    if (denominador === 0) {
+        document.getElementById("resultado").innerHTML =
+            "Não é possível dividir por zero.";
+    } else {
+        resultado = numerador / denominador;
+        document.getElementById("resultado").innerHTML = resultado;
+    }
 }
 
 function mostrarnome() {
@@ -35,11 +44,19 @@ function calculocirculo() {
 }
 
 function areatriagulo() {
-    let raio1= parseFloat(document.getElementById("base").value)
+    let raio1 = parseFloat(document.getElementById("base").value)
     let raio2 = parseFloat(document.getElementById("altura").value)
     let area = (raio1 * raio2) / 2
-    document.getElementById("resultado2").innerHTML = "A Área do triagulo é: " + area.toFixed(2)
+
+    if (altura === 0) {
+        document.getElementById("resultado2").innerHTML =
+            "Não é possível dividir por zero."
+    } else {
+        resultado2 = (raio1 * raio2) / 2
+        document.getElementById("resultado2").innerHTML = resultado2
+    }
 }
+
 
 function calculodotriagulo() {
     let co = parseInt(document.getElementById("co").value)
@@ -53,14 +70,28 @@ function realdolar() {
     let reais = parseInt(document.getElementById("real").value)
     let cotacao = parseInt(document.getElementById("dolar").value)
     let dolares = reais / cotacao
-    document.getElementById("resultado4").innerHTML = "O valor em dólar é:" + dolares.toFixed(2)
+
+    if (cotacao === 0) {
+        document.getElementById("resultado4").innerHTML =
+            "Não é possível dividir por zero."
+    } else {
+        resultado4 = reais / cotacao
+        document.getElementById("resultado4").innerHTML = resultado4
+    }
 }
+
 function media() {
-    let n1 = parseInt(document.getElementById("nota1").value)
-    let n2 = parseInt(document.getElementById("nota2").value)
+    let n1 = parseInt(document.getElementById("nota1").v    rseInt(document.getElementById("nota2").value)
     let n3 = parseInt(document.getElementById("nota3").value)
     let media = (n1 + n2 + n3) / 3
     document.getElementById("resultado5").innerHTML = "O valor da media é:" + media.toFixed(2)
+}
+if (n3 === 0) {
+    document.getElementById("resultado5").innerHTML =
+        "Não é possível dividir por zero."
+} else {
+    resultado5 = (n1 + n2 + n3) / 3
+    document.getElementById("resultado5").innerHTML = resultado5
 }
 
 
@@ -75,6 +106,8 @@ function conversaoVelocidade() {
     let mSegundo = kmhora / 3.6
     document.getElementById("resultado7").innerHTML = "O valor de celsius para fahrenheit:" + mSegundo.toFixed(2)
 }
+document.getElementById("resultado8").innerHTML = "A raiz das duas equação:" + x1.toFixed(2) + " " + x2.toFixed(2)
+
 function bhaskara() {
     let a = parseInt(document.getElementById("a").value)
     let b = parseInt(document.getElementById("b").value)
@@ -82,6 +115,6 @@ function bhaskara() {
     let delta = (b ** 2) - 4 * a * c
     let x1 = (-1 * b + (Math.sqrt(delta))) / (2 * a)
     let x2 = (-1 * b - (Math.sqrt(delta))) / (2 * a)
-    document.getElementById("resultado8").innerHTML = "A raiz das duas equação:" + x1.toFixed(2)  + " " + x2.toFixed(2)
+    document.getElementById("resultado8").innerHTML = "A raiz das duas equação:" + x1.toFixed(2) + " " + x2.toFixed(2)
 
 }
