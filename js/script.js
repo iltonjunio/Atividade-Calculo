@@ -1,6 +1,3 @@
-function helloworld() {
-    alert("hello world!");
-}
 
 function soma(n1, n2) {
     alert(n1 + n2)
@@ -48,7 +45,7 @@ function areatriagulo() {
     let raio2 = parseFloat(document.getElementById("altura").value)
     let area = (raio1 * raio2) / 2
 
-    if (altura === 0) {
+    if (altura == 0) {
         document.getElementById("resultado2").innerHTML =
             "Não é possível dividir por zero."
     } else {
@@ -71,7 +68,7 @@ function realdolar() {
     let cotacao = parseInt(document.getElementById("dolar").value)
     let dolares = reais / cotacao
 
-    if (cotacao === 0) {
+    if (cotacao == 0) {
         document.getElementById("resultado4").innerHTML =
             "Não é possível dividir por zero."
     } else {
@@ -81,32 +78,49 @@ function realdolar() {
 }
 
 function media() {
-    let n1 = parseInt(document.getElementById("nota1").v    rseInt(document.getElementById("nota2").value)
+    let n1 = parseInt(document.getElementById("nota1").value)
+    let n2 = parseInt(document.getElementById("nota2").value)
     let n3 = parseInt(document.getElementById("nota3").value)
     let media = (n1 + n2 + n3) / 3
-    document.getElementById("resultado5").innerHTML = "O valor da media é:" + media.toFixed(2)
+
+    if (n3 === 0) {
+        document.getElementById("resultado5").innerHTML =
+            "Não é possível dividir por zero."
+    } else {
+        resultado = (n1 + n2 + n3) / 3
+        document.getElementById("resultado5").innerHTML = resultado
+    }
 }
-if (n3 === 0) {
-    document.getElementById("resultado5").innerHTML =
-        "Não é possível dividir por zero."
-} else {
-    resultado5 = (n1 + n2 + n3) / 3
-    document.getElementById("resultado5").innerHTML = resultado5
-}
+
 
 
 function conversaoTemperatura() {
-    let celsius = parseFloat(document.getElementById("celsius").value)
-    let fahrenheit = (celsius * 1.8) + 32
-    document.getElementById("resultado6").innerHTML = "O valor de celsius para fahrenheit:" + fahrenheit.toFixed(2)
+    temperaturaCelsius = parseFloat(document.getElementById("celsius").value);
+    temperaturaFahrenheit = (temperaturaCelsius * 9) / 5 + 32;
+
+    if (temperaturaCelsius === 0) {
+        document.getElementById("resultado6").innerHTML =
+            "A temperatura em graus Celsius não pode ser zero.";
+    } else {
+        document.getElementById("resultado6").innerHTML =
+            temperaturaFahrenheit;
+    }
 }
 
 function conversaoVelocidade() {
-    let kmhora = parseInt(document.getElementById("velocidade").value)
-    let mSegundo = kmhora / 3.6
-    document.getElementById("resultado7").innerHTML = "O valor de celsius para fahrenheit:" + mSegundo.toFixed(2)
+    velocidade = parseFloat(document.getElementById("velocidade").value);
+    tempo = parseFloat(document.getElementById("tempo").value);
+
+    if (tempo === 0) {
+        document.getElementById("resultado7").innerHTML =
+            "O tempo não pode ser zero.";
+    } else {
+        var resultado = velocidade / tempo;
+        document.getElementById("resultado7").innerHTML = resultado;
+    }
 }
-document.getElementById("resultado8").innerHTML = "A raiz das duas equação:" + x1.toFixed(2) + " " + x2.toFixed(2)
+
+
 
 function bhaskara() {
     let a = parseInt(document.getElementById("a").value)
@@ -115,6 +129,14 @@ function bhaskara() {
     let delta = (b ** 2) - 4 * a * c
     let x1 = (-1 * b + (Math.sqrt(delta))) / (2 * a)
     let x2 = (-1 * b - (Math.sqrt(delta))) / (2 * a)
-    document.getElementById("resultado8").innerHTML = "A raiz das duas equação:" + x1.toFixed(2) + " " + x2.toFixed(2)
 
+    if (delta < 0 || isNaN(delta)) {
+        document.getElementById("resultado8").innerHTML =
+            "A equação não possui raízes reais.";
+    } else {
+        x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        document.getElementById("resultado8").innerHTML =
+            "x1 = " + x1 + "<br />x2 = " + x2;
+    }
 }
