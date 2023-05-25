@@ -43,7 +43,6 @@ function calculocirculo() {
 function areatriagulo() {
     let raio1 = parseFloat(document.getElementById("base").value)
     let raio2 = parseFloat(document.getElementById("altura").value)
-    let area = (raio1 * raio2) / 2
 
     if (altura == 0) {
         document.getElementById("resultado2").innerHTML =
@@ -66,14 +65,13 @@ function calculodotriagulo() {
 function realdolar() {
     let reais = parseInt(document.getElementById("real").value)
     let cotacao = parseInt(document.getElementById("dolar").value)
-    let dolares = reais / cotacao
 
-    if (cotacao == 0) {
+    if (cotacao  == 0) {
         document.getElementById("resultado4").innerHTML =
             "Não é possível dividir por zero."
     } else {
-        resultado4 = reais / cotacao
-        document.getElementById("resultado4").innerHTML = resultado4
+        resultado = reais / cotacao
+        document.getElementById("resultado4").innerHTML = resultado
     }
 }
 
@@ -81,9 +79,8 @@ function media() {
     let n1 = parseInt(document.getElementById("nota1").value)
     let n2 = parseInt(document.getElementById("nota2").value)
     let n3 = parseInt(document.getElementById("nota3").value)
-    let media = (n1 + n2 + n3) / 3
 
-    if (n3 === 0) {
+    if (n1, n2, n3 == 0) {
         document.getElementById("resultado5").innerHTML =
             "Não é possível dividir por zero."
     } else {
@@ -97,15 +94,7 @@ function media() {
 function conversaoTemperatura() {
     temperaturaCelsius = parseFloat(document.getElementById("celsius").value);
     temperaturaFahrenheit = (temperaturaCelsius * 9) / 5 + 32;
-
-    if (temperaturaCelsius === 0) {
-        document.getElementById("resultado6").innerHTML =
-            "A temperatura em graus Celsius não pode ser zero.";
-    } else {
-        document.getElementById("resultado6").innerHTML =
-            temperaturaFahrenheit;
-    }
-}
+    document.getElementById("resultado6").innerHTML = "O valor de cesius para Fahrenheit: " + temperaturaFahrenheit.toFixed(2)
 
 function conversaoVelocidade() {
     velocidade = parseFloat(document.getElementById("velocidade").value);
