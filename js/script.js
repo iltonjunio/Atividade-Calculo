@@ -95,6 +95,7 @@ function conversaoTemperatura() {
     temperaturaCelsius = parseFloat(document.getElementById("celsius").value);
     temperaturaFahrenheit = (temperaturaCelsius * 9) / 5 + 32;
     document.getElementById("resultado6").innerHTML = "O valor de cesius para Fahrenheit: " + temperaturaFahrenheit.toFixed(2)
+}   
 
 function conversaoVelocidade() {
     velocidade = parseFloat(document.getElementById("velocidade").value);
